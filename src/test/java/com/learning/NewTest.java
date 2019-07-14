@@ -19,7 +19,7 @@ public class NewTest {
     }
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.chrome.driver", "/home/praveenkumar/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless","--window-size=1920,1200","--ignore-certificate-errors");
         driver = new ChromeDriver(options);
